@@ -7,9 +7,19 @@
 # Patient class
 
 class Patient:
+    '''
+        Patient class to store patient records and methods to apply on them
+        Methods: search_by_disease, add_patient
+    '''
+
     patients = []
     
-    def search_by_disease(self, disease):
+    def search_by_disease(self, disease: str) -> list:
+        '''
+            Searches the patient records based on the disease
+            Returns: List of patient names
+        '''
+
         search_result = []
         
         for patient in self.patients:
@@ -18,7 +28,11 @@ class Patient:
         
         return search_result if len(search_result) > 0 else None
     
-    def add_patient(self, name, age, disease):
+    def add_patient(self, name: str, age: int, disease: str) -> None:
+        '''
+            Adds patient as a dictionary to the patients list
+        '''
+
         patient = {
             'Name': name,
             'Age': age,

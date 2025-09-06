@@ -22,7 +22,7 @@ cart_items = {'Laptop': 50000, 'Headphones': 2000, 'Mouse': 500, 'Keyboard': 150
 cart_items2 = {'Laptop': 50000, 'Headphones': 2000, 'Mouse': 500, 'Keyboard': 1500, 'Mouse Pad': 300, 'Laptop Stand': 2500}
 
 # Discount not applicable
-print(f'Total price of your purchase is {calc_price(cart_items)}')
+print(f'Total Price: {calc_price(cart_items)}')
 
 # Discount applicable
-print(f'Total price of your purchase is {calc_price(cart_items2)}')
+print(f'Total Price: {calc_price(cart_items2)}')

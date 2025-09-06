@@ -6,7 +6,7 @@ def calc_price(cart: dict) -> float:
     '''
     # Handling if cart is empty
     if len(cart) == 0:
-        return None
+        return 0
     
     total_price = 0
     for cost in cart.values():
